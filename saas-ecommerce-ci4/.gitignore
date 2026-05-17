@@ -1,0 +1,36 @@
+# Environment
+.env
+
+# Composer
+vendor/
+
+# CI4 writable directory (logs, cache, sessions, uploads)
+writable/logs/*
+writable/cache/*
+writable/session/*
+writable/debugbar/*
+!writable/logs/.gitkeep
+!writable/cache/.gitkeep
+!writable/session/.gitkeep
+
+# Uploads (user data - keep directory structure)
+writable/uploads/*
+!writable/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any build tools used)
+node_modules/
+npm-debug.log
+
+# Build artifacts
+*.log
+*.cache

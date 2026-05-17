@@ -1,0 +1,12 @@
+/* Store Front CSS */
+.product-card { border-radius: 12px; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.product-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,.12) !important; }
+.product-card .product-img { height: 200px; object-fit: cover; background: #f8fafc; }
+.product-img-placeholder { height: 200px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #94a3b8; }
+.badge-sale { position: absolute; top: 10px; left: 10px; background: #ef4444; color: #fff; font-size: .7rem; padding: 3px 8px; border-radius: 4px; font-weight: 700; }
+.badge-featured { position: absolute; top: 10px; right: 10px; background: #f59e0b; color: #fff; font-size: .7rem; padding: 3px 8px; border-radius: 4px; font-weight: 700; }
+.qty-control { display: flex; align-items: center; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; }
+.qty-control button { border: none; background: #f8fafc; padding: 6px 12px; font-size: 1rem; cursor: pointer; }
+.qty-control input { border: none; width: 50px; text-align: center; font-weight: 600; }
+.add-to-cart-btn { transition: all 0.2s ease; }
+.add-to-cart-btn.loading { opacity: .7; pointer-events: none; }

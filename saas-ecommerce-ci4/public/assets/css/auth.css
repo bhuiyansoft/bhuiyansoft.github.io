@@ -1,0 +1,117 @@
+/* ============================================================
+   Auth Pages CSS
+   ============================================================ */
+
+body.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-logo {
+    margin-bottom: 12px;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0;
+    color: #94a3b8;
+    font-size: .85rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.form-control {
+    border-radius: 8px;
+    border-color: #cbd5e1;
+    padding: 10px 14px;
+}
+
+.form-control:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,.15);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-primary:hover { background: linear-gradient(135deg, #4338ca, #4f46e5); }
+
+/* Demo credentials */
+.demo-credentials {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+}
+
+.demo-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.demo-card:hover {
+    border-color: #6366f1;
+    box-shadow: 0 2px 8px rgba(99,102,241,.15);
+}
+
+.bg-purple { background: #7c3aed; }
+
+/* Plan options */
+.plan-option { display: block; cursor: pointer; }
+.plan-option input { display: none; }
+
+.plan-card {
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.15s ease;
+}
+
+.plan-option input:checked ~ .plan-card {
+    border-color: #4f46e5;
+    background: #eef2ff;
+}
+
+.plan-option:hover .plan-card { border-color: #a5b4fc; }
+
+/* Password strength */
+.password-strength { min-height: 20px; }
